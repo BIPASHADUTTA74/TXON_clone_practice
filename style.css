@@ -1,0 +1,172 @@
+body{
+    background-color: rgb(158, 139, 245);
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------------------- header --------------------------*/
+
+#header{
+    display: flex;
+    margin: 0;
+    padding: 1% 8% 1% 8%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    padding: 0% 30% 0% 0%;
+    
+}
+.logo{
+    margin: 0% 52% 0% 0%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    color: aliceblue;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin:  0;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar li{
+    font-size:18px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+
+    
+}
+.navbar li:hover{
+    color: rgb(56, 2, 250);
+}
+
+
+
+/*---------------------- body --------------------------*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 72px;
+}
+  
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  h2 {
+    color: rgba(20, 20, 20, 0.699);
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+
+.get-started{
+  background: linear-gradient(97.83deg, #ca9626 14.98%, #cc76c8 103.58%);
+  box-shadow: 9px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  animation: anim1 6s;
+  
+}
+.get-started:hover{
+    background: #82e7ce;
+    color:rgb(56, 2, 250);
+    box-shadow:0px 20px 40px #82e7ce;
+    font-weight: bolder;
+}
+
+.right{
+   -webkit-animation: action 7ms infinite alternate;
+   animation: action 1.5s infinite alternate;
+}
+@-webkit-keyframes action{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-30px);}
+}
+@keyframes action{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-30px);}
+}
+
+/*---------------------- water --------------------------*/
+.water{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    /* background: #3586ff; */
+    background:  rgb(158, 139, 245);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .water .wave{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(./img/wave.png);
+    background-size: 1000px 100px;
+  }
+  .water .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1;
+    opacity: 1;
+    animation-delay: 1s;
+    bottom: 0;
+  }
+  .water .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -9s;
+    bottom: 10px;
+  }
+  .water .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -3s;
+    bottom: 15;
+  }
+  
+  .water .wave.wave4{
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -7s;
+    bottom: 20px;
+  }
+  
+  @keyframes animate{
+  0%{
+  background-position-x: 0;
+  }
+  100%{
+  background-position-x: 1000px;
+  }
+  }
+  
